@@ -18,7 +18,11 @@
 <img src="img/fade_max.png" width="135" align="top"/>
 
 <script>
-
+var vid = document.getElementById("shakeys");
+vid.playbackRate = 0.4;
+document.getElementById('shakeys').addEventListener('loadedmetadata', function() {
+  this.currentTime = 38;
+}, false);
 </script>
 
 </body>
