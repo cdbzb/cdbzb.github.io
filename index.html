@@ -16,6 +16,12 @@
 	<source src="Videos/mining.webm">
 </video>
 <img src="img/shrubs cover.jpg" width="125" align="top"> 
+<img src="img/Kitty.jpg" width="200" align="center"> 
+<video id="Kitty" loop autoplay muted>
+	<source src="Videos/Kitty.m4v">
+	<source src="Videos/Kitty.webm">
+</video>
+
 <img src="img/fade_max.png" width="135" align="top"/>
 
 <script>
@@ -23,6 +29,9 @@ var vid = document.getElementById("shakeys");
 vid.playbackRate = 0.4;
 vid.addEventListener('loadedmetadata', function() {
   this.currentTime = 38;
+}, false);
+var vidb = document.getElementById("Kitty");
+vidb.playbackRate = 0.3;
 }, false);
 </script>
 
