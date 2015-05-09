@@ -1,0 +1,10 @@
+html, body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+#background {
+    background : #000000 url("http://pascocountyflattorney.com/wp-content/uploads/2012/07/tokyo-blue-background-4547.jpg") no-repeat bottom left;
+    background-size: 100% 100%;
+    min-height:100%;
+}

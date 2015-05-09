@@ -1,0 +1,14 @@
+
+
+<head>
+<script src="jquery-1.2.6.js" type="text/javascript"></script>
+ <script src="jquery.marquee.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+
+<marquee> adfb adfb adfb adfb adfb adfb adfb adfb adfbf adfb  </marquee>
+
+
+</body>
