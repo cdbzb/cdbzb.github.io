@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+<!-- animated gif converter
+ffmpeg -i mini*mp4  -pix_fmt rgb24 -r 10 -f gif - | gifsicle  --optimize=3 --loopcount=8 --delay=8 > out2.gif  
+ffmpeg -i Kitty*m4v  -t 62 -pix_fmt rgb24  -f gif - | gifsicle  --optimize=3 --loopcount=8 --delay=12 > out2.gif 
+-->
+
 <html>
 <head>
 	<title>See The Busy Bee - Michael Webster</title>
@@ -8,14 +14,17 @@
 
 <a href="/darkandwrinkled">
 	<img src="img/rimbaud.jpg" height="200" />
-	<img src="img/Poet.jpg" width="180" >
-	<img src="img/reportcover.jpg" width="150"> 
 </a>
+	<img src="img/Poet.jpg" width="180" >
+	<img src="img/reportcover.jpg" width="150">
 
+<img src="Videos/rescue.gif" align="bottom" />
+<!-- 
 <video id="rescue" loop autoplay muted align="bottom" width="200">
 	<source src="Videos/rescue.mmp4">
 	<source src="Videos/rescue.webm">
 </video>
+-->
 	<img src="img/lotusfestival.jpg" width="130"/>
 <!--
 	<video id="shakeys" loop autoplay muted>
@@ -23,14 +32,16 @@
 		<source src="Videos/mining.webm">
 	</video>
 -->
-<img src = "Videos/out.gif" >
+<img src = "Videos/mining.gif" >
 
 <img src="img/shrubs cover.jpg" width="125" align="top"> 
+<!--
 <video id="Kitty" loop autoplay muted align="bottom" width="200">
 	<source src="Videos/Kitty.m4v">
 	<source src="Videos/Kitty.webm">
 </video>
-
+-->
+<img src="Videos/Kitty.gif" width="200" \>
 <img src="img/fade_max.png" width="135" align="top"/>
 <img src="img/snails.jpg" width="320" />
 <img src="img/cricket.jpg" width="212" align="bottom"/>
