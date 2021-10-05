@@ -11,52 +11,48 @@ ffmpeg -i Kitty*m4v  -t 62 -pix_fmt rgb24  -f gif - | gifsicle  --optimize=3 --l
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
-<a href="/darkandwrinkled">
-	<img src="img/rimbaud.jpg" height="200" />
-</a>
+	<!-- 1 Rimbaud-->
+	<a href="/darkandwrinkled">
+		<img src="img/rimbaud.jpg" height="200" />
+	</a>
+	<!-- 2 Juliana-->
 	<img src="img/Poet.jpg" width="180" >
+
+	<!-- 3 Report-->
 	<img src="img/reportcover.jpg" width="150">
 
-<img src="Videos/rescue.gif" align="bottom" />
-<!-- 
-<video id="rescue" loop autoplay muted align="bottom" width="200">
-	<source src="Videos/rescue.mmp4">
-	<source src="Videos/rescue.webm">
-</video>
--->
+	<!-- 4 Rescue-->
+	<a href=/Videos/rescue.mp4>
+		<img src="Videos/rescue.gif" align="bottom" />
+	</a>
+
 	<img src="img/lotusfestival.jpg" width="130"/>
-<!--
-	<video id="shakeys" loop autoplay muted>
-		<source src="Videos/mining.mp4">
-		<source src="Videos/mining.webm">
-	</video>
--->
-<img src = "Videos/mining.gif" >
+	<img src = "Videos/mining.gif" >
 
-<img src="img/shrubs cover.jpg" width="125" align="top"> 
-<!--
-<video id="Kitty" loop autoplay muted align="bottom" width="200">
-	<source src="Videos/Kitty.m4v">
-	<source src="Videos/Kitty.webm">
-</video>
--->
-<img src="Videos/Kitty.gif" width="200" \>
-<img src="img/fade_max.png" width="135" align="top"/>
-<img src="img/snails.jpg" width="320" />
-<img src="img/cricket.jpg" width="212" align="bottom"/>
+	<!-- Shrubs -->
+	<a href= "https://www.youtube.com/playlist?list=PLLQoqvbbLAMDZpntUtbWJzzldXdFxKymN">
+		<img src="img/shrubs cover.jpg" width="125" align="top"> 
+	</a>
+	<!-- kitty-->
+	<a href=/Videos/Kitty.m4v>
+		<img src="Videos/Kitty.gif" width="200" \>
+	</a>
+	<img src="img/fade_max.png" width="135" align="top"/>
+	<img src="img/snails.jpg" width="320" />
+	<img src="img/cricket.jpg" width="212" align="bottom"/>
 
-<img src="img/pooh.jpg" width="120" align="top" />
+	<img src="img/pooh.jpg" width="120" align="top" />
 
-<script>
-	var vid = document.getElementById("shakeys");
-	vid.playbackRate = 0.4;
-	vid.addEventListener('loadedmetadata', function() {
-	  this.currentTime = 38;
-	}, false);
-	var vidb = document.getElementById("Kitty");
-	vidb.playbackRate = 0.25;
-</script>
+	<script>
+		var vid = document.getElementById("shakeys");
+		vid.playbackRate = 0.4;
+		vid.addEventListener('loadedmetadata', function() {
+					this.currentTime = 38;
+				}, false);
+		var vidb = document.getElementById("Kitty");
+		vidb.playbackRate = 0.25;
+		
+	</script>
 
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+<meta charset="utf‐8">
+<title> Hello web audio </title> </head>
+<body>
+   </body>
+   Hi there!
+   <script>
+	   var audioCtx = new (window.AudioContext || window.webkitAudioContext);
+	   var volume = audioCtx.createGain();
+	   volume.connect(audioCtx.destination);
+	   var sine = audioCtx.createOscillator();
+	   sine.start();
+	   sine.frequency.value =(  Math.random()*300+200 );
+	   sine.connect(volume);
+	   var sineb = audioCtx.createOscillator();
+	   sineb.start();
+	   sineb.frequency.value =(  Math.random()*300+200 );
+	   sineb.connect(volume);
+	   var sinec = audioCtx.createOscillator();
+	   sinec.start();
+	   sinec.frequency.value =(  Math.random()*300+200 );
+	   sinec.connect(volume);
+	   volume.gain.value = 0.1;
+   </script>
+</html>
