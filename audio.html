@@ -4,10 +4,22 @@
 <meta charset="utf‐8">
 <title> Hello web audio </title> </head>
 <body>
-   </body>
    Hi there!
+<button id="button">Alt+Shift+Click on me!</button>
+   </body>
    <script>
-	   var audioCtx = new (window.AudioContext || window.webkitAudioContext);
+	   //function init() {
+			      var audioCtx = new (window.AudioContext || window.webkitAudioContext);
+		      //};
+	   //window.addEventListener('load', init,true);
+	//   function touchStarted() {
+	//	   getAudioContext().resume();
+	//	      };
+
+	   var playing = false;
+  button.onclick = function(event) {
+		  audioCtx.resume();     
+  };
 	   var volume = audioCtx.createGain();
 	   volume.connect(audioCtx.destination);
 	   var sine = audioCtx.createOscillator();

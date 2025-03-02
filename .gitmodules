@@ -1,0 +1,3 @@
+[submodule "poorfarmweb"]
+	path = poorfarmweb
+	url = git@github.com:cdbzb/poorfarmweb.git
