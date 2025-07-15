@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Congratulations! You've Been Selected!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800,400,italic" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe600 0%, #ff3c00 100%);
+      min-height: 100vh;
+      color: #222;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 480px;
+      background: #fffbe9;
+      margin: 2.5em auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08), 0 2px 6px rgba(235,196,37,0.14);
+      padding: 2em 1.5em 2em 1.5em;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      border: 3px dashed #ffd600;
+      transition: box-shadow .3s;
+    }
+    .alert {
+      font-size: 1.05em;
+      background: #ff2929;
+      color: #fff;
+      padding: .55em 0;
+      border-radius: 7px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #c63f15aa;
+      margin-bottom: 1.1em;
+      letter-spacing: .05em;
+      animation: flash 1s infinite steps(2, start);
+    }
+    @keyframes flash {
+      0%, 100% { background: #ff2929; }
+      50% { background: #ffe677; color:#a82222; }
+    }
+    h1 {
+      font-size: 2em;
+      margin: 0.2em 0 0.35em;
+      line-height: 1.1;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      color: #f1622c;
+      text-shadow: 2px 2px 0px #ffe60077;
+    }
+    .offer {
+      background: #fff2e3;
+      font-size: 1.13em;
+      margin-bottom: 1.7em;
+      border: 1px solid #ffe4a3;
+      padding: .95em .5em;
+      border-radius: 9px;
+      color: #ce8100;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ffe600 60%, #ff8800 100%);
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 7px;
+      border: none;
+      padding: 0.9em 2.1em;
+      font-size: 1.2em;
+      margin: 1.15em 0 1.8em 0;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(225,180,60,0.18);
+      transition: background .16s, color .1s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #ffd600 10%, #ff6633 95%);
+      color: #e39322;
+    }
+    .disclaimer {
+      font-size: .87em;
+      color: #ba8800;
+      margin-top: 1.7em;
+      opacity: .43;
+    }
+    .poem-collection {
+      margin-top: 2.4em;
+      display: none;
+      text-align: left;
+      color: #222;
+    }
+    .poem-title {
+      font-size: 1.13em;
+      font-weight: bold;
+      margin: 1.1em 0 0.12em 0;
+      color: #e0861e;
+      letter-spacing: .04em;
+    }
+    .poem {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.02em;
+      margin: .6em 0 .9em 0;
+      white-space: pre-wrap;
+      color: #442700;
+      line-height: 1.55;
+    }
+
+    /* Fake award badge */
+    .badge {
+      width: 75px;
+      height: 75px;
+      background: radial-gradient(circle, #fffdc4 60%, #ffe453 100%);
+      box-shadow: 0 4px 30px #e8cd4cab;
+      border-radius: 50%;
+      border: 6px double #ffd600;
+      position:absolute;
+      left: -38px;
+      top:-38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      font-size: 2.4em;
+      color: #ffd600;
+      text-shadow: 0 0 2px #f69444, 2px 3px 4px #c17600cc;
+      font-weight: bold;
+      transform: rotate(-18deg);
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        margin: 1.7em 0.4em;
+      }
+      .badge {
+        left: -25px;
+        top: -25px;
+        width: 52px;
+        height: 52px;
+        font-size: 1.3em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge" aria-hidden="true">★</div>
+    <div class="alert" role="alert">LIMITED TIME OPPORTUNITY! CLAIM BELOW NOW</div>
+    <h1>Congratulations!</h1>
+    <div class="offer">
+      <b>You have been pre-selected to receive a <span style="color:#fd9700">Mystery Literary Reward</span>.<br>
+      <span style="font-size:1.14em;">Unlock exclusive content by clicking the button below!</span></b>
+    </div>
+    <button class="btn" id="claimBtn">CLAIM MY REWARD</button>
+    <div class="disclaimer">
+      *No purchase necessary. May contain artistic value. Terms apply.
+    </div>
+    <div class="poem-collection" id="poemArea">
+      <div class="poem-title">[i carry your heart with me(i carry it in]</div>
+      <div class="poem">
+i carry your heart with me(i carry it in
+my heart)i am never without it(anywhere
+i go you go,my dear;and whatever is done
+by only me is your doing,my darling)
+                                            i fear
+no fate(for you are my fate,my sweet)i want
+no world(for beautiful you are my world,my true)
+and it’s you are whatever a moon has always meant
+and whatever a sun will always sing is you
+here is the deepest secret nobody knows
+(here is the root of the root and the bud of the bud
+and the sky of the sky of a tree called life;which grows
+higher than soul can hope or mind can hide)
+and this is the wonder that's keeping the stars apart
+i carry your heart(i carry it in my heart)
+      </div>
+      <div class="poem-title">[in Just-]</div>
+      <div class="poem">
+in Just-
+spring   when the world is mud-
+luscious the little
+lame balloonman
+
+whistles      far      and wee
+
+and eddieandbill come
+running from marbles and
+piracies and it's
+spring
+
+when the world is puddle-wonderful
+
+the queer
+old balloonman whistles
+far      and           wee
+and bettyandisbel come dancing
+
+from hop-scotch and jump-rope and
+
+it's
+spring
+and
+
+the
+
+goat-footed
+
+balloonMan      whistles
+far
+and
+wee
+      </div>
+      <div class="poem-title">[anyone lived in a pretty how town]</div>
+      <div class="poem">
+anyone lived in a pretty how town
+(with up so floating many bells down)
+spring summer autumn winter
+he sang his didn’t he danced his did
+
+Women and men(both little and small)
+cared for anyone not at all
+they sowed their isn’t they reaped their same
+sun moon stars rain
+
+children guessed(but only a few
+and down they forgot as up they grew
+autumn winter spring summer)
+that noone loved him more by more
+
+when by now and tree by leaf
+she laughed his joy she cried his grief
+bird by snow and stir by still
+anyone’s any was all to her
+
+someones married their everyones
+laughed their cryings and did their dance
+(sleep wake hope and then)they
+said their nevers they slept their dream
+
+stars rain sun moon
+(and only the snow can begin to explain
+how children are apt to forget to remember
+with up so floating many bells down)
+
+one day anyone died i guess
+(and noone stooped to kiss his face)
+busy folk buried them side by side
+little by little and was by was
+
+all by all and deep by deep
+and more by more they dream their sleep
+noone and anyone earth by april
+wish by spirit and if by yes.
+
+Women and men(both dong and ding)
+summer autumn winter spring
+reaped their sowing and went their came
+sun moon stars rain
+      </div>
+      <div class="poem-title">[l(a]</div>
+      <div class="poem">
+l(a
+
+le
+af
+fa
+
+ll
+
+s)
+one
+l
+
+iness
+      </div>
+      <div class="poem-title">More at <a target="_blank" href="https://www.poetryfoundation.org/poets/e-e-cummings">Poetry Foundation</a></div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('claimBtn').addEventListener('click', function() {
+      this.style.display = 'none';
+      document.getElementById('poemArea').style.display = "block";
+      document.querySelector('.offer').innerHTML = "<b>Mystery Reward Unlocked: The Poetry of e e cummings!</b>";
+      document.querySelector('.alert').textContent = "Success! Enjoy your reward.";
+      document.querySelector('.alert').style.background = "#4be358";
+      document.querySelector('.alert').style.color = "#10460b";
+      document.querySelector('.badge').textContent = "✓";
+    });
+  </script>
+</body>
+</html>
+
+
