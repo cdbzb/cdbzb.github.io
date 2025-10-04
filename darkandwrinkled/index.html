@@ -1,127 +1,262 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <meta charset="UTF-8"> 
+	<meta charset="UTF-8"> 
 	<title>Dark and Wrinkled</title>
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 20px;
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			overflow: hidden;
+		}
+		
+		#background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(45deg, #1a0033, #000033);
+			z-index: 1;
+		}
+		
+		#audio-container {
+			position: fixed;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 100;
+			background: rgba(0, 0, 0, 0.8);
+			padding: 10px;
+			border-radius: 10px;
+		}
+		
+		audio {
+			display: block;
+		}
+		
+		#lyrics-container {
+			position: relative;
+			z-index: 10;
+			display: flex;
+			gap: 40px;
+			margin-top: 80px;
+			height: calc(100vh - 120px);
+		}
+		
+		.lyrics-column {
+			flex: 1;
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.scrolling-text {
+			animation: scroll 180s linear infinite;
+			font-size: 20px;
+			line-height: 1.8;
+			padding: 20px;
+			transform: translateY(0);
+		}
+		
+		@keyframes scroll {
+			0% {
+				transform: translateY(0);
+			}
+			100% {
+				transform: translateY(-100%);
+			}
+		}
+		
 
-	<script src="jquery-1.2.6.js" type="text/javascript"></script>
-	<script src="jquery.marquee.js" type="text/javascript"></script>
-     
+		
+		h3 {
+			color: #ff69b4;
+			margin-bottom: 20px;
+		}
+	</style>
 </head>
 <body>
-<div id="background"></div>
-<audio autoplay>
-	<source src="/Songs/darkandwrinkled.mp3" type="audio/mpeg">
-</audio>
-
-
-<table>
-	<table rows="1" border="0" cellspacing="5" cellpadding="5" align="left">
-		<td valign="top">
-			<marquee behavior="scroll" direction="up" scrollamount="0.7">
-				<font size="5">
-					"Dark and Wrinkled" <br>
-					by Michael Webster and Arthur Rimbaud <br>
-					From the album "Mainland" by Joe Moe" <br>
-					Moe sings the English <br>
-					Dylan Hostetter sings the French <br>
-					 <br>
-					 Dark and Wrinkled <br>
-					 like a deep pink flower<br />
-					 it breathes<br>
-					 humbly nestled in the moss<br />
-					 <br />
-				<br /> <br />
-			
-				In my dreams<br ./> my mouth<br />
-				was often placed <br /> upon its opening<br />
-			my soul <br />  jealous of the physical coitus<br />
-			made of it its fawny tear bottle<br />
-			and its nest of sobs<br />
-			<br />
-				<br /> <br />
-			
-				Dark and wrinkled<br/> still wet with love<br />
-				that follows the gentle <br/> descent of white buttock<br />
-			to the border of its edge<br />
-			<br />
-				<br /> <br />
-			
-				In my dreams<br ./> my mouth<br />
-				was often placed <br /> upon its opening<br />
-			my soul <br />  jealous of the physical coitus<br />
-			made of it its fawny tear bottle<br />
-			and its nest of sobs<br />
-			<br />
-				<br /> <br />
-				<br /> <br />
-			Filaments like tears  of milk have wept<br />
-			under the cruel wind 
-			pushing them back<br />
-			over small clots of reddish marl<br />
-			and then lose themselves where the slope calls them<br />
-			<br />
-			
-				<br /> <br />
-			It is the fainting olive and the cajoling flute<br />
-			the tube from which descends the celestial praline<br />
-			a feminine Canaan, enclosed in moisture
-				</font>
-			</marquee>
-		</td>
-		<td valign="top">
-			<marquee behavior="scroll" direction="up" scrollamount="0.7">
-			<font size="5">
-	"Obscur et froncé" <br>
-					par Michael Webster et Arthur Rimbaud <br>
-					du CD "Mainland" de Joe Moe" <br>
-					Moe chant l'Anglais <br>
-					Dylan Hostetter chant le Francais <br>
-					 <br>
-
-					 Obscur et froncé <br /> comme un œillet violet<br />
-				Il respire, humblement tapi <br /> parmi la mousse<br />
-				<br />
-				<br /> <br />
+	<div id="background"></div>
+	
+	<div id="audio-container">
+		<audio id="audioPlayer" controls preload="metadata">
+			<source src="../Songs/darkandwrinkled.mp3" type="audio/mpeg">
+			<source src="../Songs/darkandwrinkled.mp3" type="audio/mp3">
+			<source src="Songs/darkandwrinkled.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<div id="status" style="text-align: center; margin-top: 5px; font-size: 12px; color: #888;">
+			Click play to start
+		</div>
+	</div>
+	
+	<script>
+		const audio = document.getElementById('audioPlayer');
+		const status = document.getElementById('status');
+		
+		// Debug audio loading
+		audio.addEventListener('loadstart', function() {
+			console.log('Audio load started');
+			status.textContent = 'Loading audio...';
+		});
+		
+		audio.addEventListener('canplay', function() {
+			console.log('Audio can play');
+			status.textContent = 'Audio ready - click play';
+			status.style.color = '#4ade80';
+		});
+		
+		audio.addEventListener('error', function(e) {
+			console.log('Audio error:', e);
+			console.log('Audio error details:', audio.error);
+			status.textContent = 'Audio error - check console and file path';
+			status.style.color = '#ff6b6b';
+		});
+		
+		audio.addEventListener('playing', function() {
+			status.textContent = 'Now playing...';
+			status.style.color = '#4ade80';
+		});
+		
+		audio.addEventListener('pause', function() {
+			status.textContent = 'Paused';
+			status.style.color = '#fbbf24';
+		});
+		
+		// Log the current source for debugging
+		console.log('Audio source:', audio.currentSrc || audio.src);
+		console.log('Audio sources available:', Array.from(audio.children).map(s => s.src));
+		
+		// Test if file exists
+		fetch('../Songs/darkandwrinkled.mp3')
+			.then(response => {
+				console.log('Fetch response:', response.status, response.statusText);
+				if (response.ok) {
+					status.textContent = 'Audio file found - try clicking play';
+					status.style.color = '#4ade80';
+				} else {
+					status.textContent = 'Audio file not accessible';
+					status.style.color = '#ff6b6b';
+				}
+			})
+			.catch(err => {
+				console.log('Fetch error:', err);
+				status.textContent = 'Cannot access audio file - try local server';
+				status.style.color = '#ff6b6b';
+			});
+	</script>
+	
+	<div id="lyrics-container">
+		<div class="lyrics-column">
+			<div class="scrolling-text">
+				<h3>"Dark and Wrinkled"</h3>
+				by Michael Webster and Arthur Rimbaud<br>
+				From the album "Mainland" by Joe Moe<br>
+				Moe sings the English<br>
+				Dylan Hostetter sings the French<br>
+				<br><br>
 				
-				Mon Rêve <br /> s’aboucha <br /> souvent<br /> à sa ventouse&#160;;<br />
-				Mon âme, <br /> du coït matériel jalouse,<br />
-				En fit son larmier fauve<br /> et son nid de sanglots.<br />
-				<br />
-				<br /> <br />
-				Obscur et froncé <br />
-				Humide encor d’amour <br /> qui suit la fuite douce <br /> des fesses blanches <br />
-				jusqu’au cœur de son ourlet.<br />
-				<br />
-				<br /> <br />
-				Mon Rêve <br /> s’aboucha <br /> souvent<br /> à sa ventouse&#160;;<br />
-				Mon âme, <br /> du coït matériel jalouse,<br />
-				En fit son larmier fauve<br /> et son nid de sanglots.<br />
-				<br />
-				<br /> <br />
-				<br /> <br />
-				Des filaments pareils à des larmes de lait<br />
-				Ont pleuré, sous le vent cruel qui les repousse,<br />
-				À travers de petits caillots de marne rousse<br />
-				<br /> <br ?>
-				<br /> <br />
-				C’est l’olive pâmée, et la flûte caline&#160;;<br />
-				C’est le tube où descend la céleste praline&#160;:<br />
-				Chanaan féminin dans les moiteurs enclos&#160;!<br /></p>
-			</font>
-			</marquee>
-
-		</td>
-
-	</table>
-
-<script>
-(window.onpopstate = function () {
-   	console.log(location.hash)
-})();
-</script>
+				Dark and Wrinkled<br>
+				like a deep pink flower<br>
+				it breathes<br>
+				humbly nestled in the moss<br>
+				<br><br>
+				
+				In my dreams<br>
+				my mouth<br>
+				was often placed<br>
+				upon its opening<br>
+				my soul<br>
+				jealous of the physical coitus<br>
+				made of it its fawny tear bottle<br>
+				and its nest of sobs<br>
+				<br><br>
+				
+				Dark and wrinkled<br>
+				still wet with love<br>
+				that follows the gentle<br>
+				descent of white buttock<br>
+				to the border of its edge<br>
+				<br><br>
+				
+				In my dreams<br>
+				my mouth<br>
+				was often placed<br>
+				upon its opening<br>
+				my soul<br>
+				jealous of the physical coitus<br>
+				made of it its fawny tear bottle<br>
+				and its nest of sobs<br>
+				<br><br><br>
+				
+				Filaments like tears of milk have wept<br>
+				under the cruel wind<br>
+				pushing them back<br>
+				over small clots of reddish marl<br>
+				and then lose themselves where the slope calls them<br>
+				<br><br>
+				
+				It is the fainting olive and the cajoling flute<br>
+				the tube from which descends the celestial praline<br>
+				a feminine Canaan, enclosed in moisture
+			</div>
+		</div>
+		
+		<div class="lyrics-column">
+			<div class="scrolling-text">
+				<h3>"Obscur et froncé"</h3>
+				par Michael Webster et Arthur Rimbaud<br>
+				du CD "Mainland" de Joe Moe<br>
+				Moe chant l'Anglais<br>
+				Dylan Hostetter chant le Francais<br>
+				<br><br>
+				
+				Obscur et froncé<br>
+				comme un œillet violet<br>
+				Il respire, humblement tapi<br>
+				parmi la mousse<br>
+				<br><br>
+				
+				Mon Rêve<br>
+				s'aboucha<br>
+				souvent<br>
+				à sa ventouse ;<br>
+				Mon âme,<br>
+				du coït matériel jalouse,<br>
+				En fit son larmier fauve<br>
+				et son nid de sanglots.<br>
+				<br><br>
+				
+				Obscur et froncé<br>
+				Humide encor d'amour<br>
+				qui suit la fuite douce<br>
+				des fesses blanches<br>
+				jusqu'au cœur de son ourlet.<br>
+				<br><br>
+				
+				Mon Rêve<br>
+				s'aboucha<br>
+				souvent<br>
+				à sa ventouse ;<br>
+				Mon âme,<br>
+				du coït matériel jalouse,<br>
+				En fit son larmier fauve<br>
+				et son nid de sanglots.<br>
+				<br><br><br>
+				
+				Des filaments pareils à des larmes de lait<br>
+				Ont pleuré, sous le vent cruel qui les repousse,<br>
+				À travers de petits caillots de marne rousse<br>
+				<br><br>
+				
+				C'est l'olive pâmée, et la flûte caline ;<br>
+				C'est le tube où descend la céleste praline :<br>
+				Chanaan féminin dans les moiteurs enclos !
+			</div>
+		</div>
+	</div>
 </body>
 </html>
-
-
