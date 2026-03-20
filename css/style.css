@@ -22,12 +22,22 @@ html, body {
 }
 
 .site-header h1 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.site-subtitle {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  margin-top: 0.2rem;
 }
 
 /* === Tile Grid === */
