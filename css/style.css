@@ -1,0 +1,563 @@
+/* === Reset & Base === */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* === Header === */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1.5rem 2rem;
+}
+
+.site-header h1 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* === Tile Grid === */
+.tile-grid {
+  display: grid;
+  grid-template-areas:
+    "opera opera opera opera  rec   rec   rec     video video video video video"
+    "tv    tv    tv    inst   inst  inst  inst   inst  inst  perf  perf  perf";
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+  height: 100vh;
+  width: 100%;
+}
+
+/* === Individual Tiles === */
+.tile {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Video background in tiles */
+.tile-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.tile:hover .tile-video-bg {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* Gradient fallback (shows when video hasn't loaded) */
+.tile-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.tile:hover .tile-img {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* Grid area assignments */
+.tile-opera        { grid-area: opera; }
+.tile-video        { grid-area: video; }
+.tile-recordings   { grid-area: rec; }
+.tile-television   { grid-area: tv; }
+.tile-installation { grid-area: inst; }
+.tile-performance  { grid-area: perf; }
+
+/* Placeholder colors — replace with background-image once you have photos */
+.tile-opera .tile-img        { background: linear-gradient(135deg, #2c1810, #5a3020); }
+.tile-video .tile-img        { background: linear-gradient(135deg, #1a2a1a, #2a5a3a); }
+.tile-recordings .tile-img   { background: url('../images/tile-recordings.jpg') center/cover; }
+.tile-television .tile-img   { background: url('../images/tile-television.jpg') center/cover; }
+.tile-installation .tile-img { background: url('../images/tile-installation.png') center/cover; }
+.tile-performance .tile-video-bg { object-fit: contain; background: #111; }
+.tile-performance .tile-img  { background: url('../images/tile-performance.jpg') center/cover; }
+
+/* === Tile Labels === */
+.tile-label {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 2;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease;
+}
+
+.tile:hover .tile-label {
+  opacity: 0.7;
+}
+
+/* === Responsive: stack on mobile === */
+@media (max-width: 600px) {
+  .tile-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "opera" "video" "recordings"
+      "television" "installation" "perf";
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .tile {
+    min-height: 16vh;
+  }
+
+  .tile-label {
+    font-size: 1.4rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .site-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .site-header h1 {
+    font-size: 1rem;
+  }
+}
+
+/* === Category Page Styles === */
+.page-header {
+  padding: 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.page-header nav {
+  margin-top: 0.5rem;
+}
+
+.page-header nav a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  transition: color 0.2s;
+}
+
+.page-header nav a:hover,
+.page-header nav a.active {
+  color: #fff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.03);
+}
+
+.project-card .card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem 1rem 1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85) 70%);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Placeholder card (no image yet) */
+.project-card.placeholder {
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card.placeholder .card-title {
+  position: static;
+  background: none;
+  text-align: center;
+}
+
+.card-title small {
+  font-size: 0.75rem;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+/* === Project Detail Page === */
+.project-detail {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.project-info {
+  margin-bottom: 2rem;
+}
+
+.project-info h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.project-player video {
+  width: 100%;
+  border-radius: 2px;
+  background: #000;
+}
+
+.project-player audio {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+/* Click-to-play poster */
+.video-poster-wrap {
+  cursor: pointer;
+}
+
+.video-poster-wrap .video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.video-poster-wrap .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 68px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.video-poster-wrap .play-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 12px 0 12px 22px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.9);
+}
+
+.video-poster-wrap:hover .play-btn {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* === Project Sections (multiple performances on one page) === */
+.project-section {
+  margin-bottom: 3rem;
+}
+
+.project-section h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+}
+
+.project-info .project-meta {
+  margin-top: 1rem;
+}
+
+/* === Text Links === */
+.text-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.text-link:hover {
+  color: #fff;
+}
+
+/* === Photo Row === */
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.photo-row img {
+  width: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
+
+.photo-credit {
+  font-size: 0.75rem;
+  opacity: 0.35;
+  margin-top: 0.5rem;
+}
+
+/* === Performance List === */
+.performance-list {
+  list-style: none;
+  padding: 0;
+}
+
+.performance-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.7;
+  padding: 0.3rem 0;
+}
+
+/* === Audio List === */
+.audio-list {
+  margin-top: 1.5rem;
+}
+
+.audio-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.audio-title {
+  flex: 0 0 200px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.audio-item audio {
+  flex: 1;
+  max-width: 400px;
+  height: 36px;
+}
+
+@media (max-width: 600px) {
+  .audio-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .audio-title {
+    flex: none;
+  }
+
+  .audio-item audio {
+    width: 100%;
+  }
+}
+
+/* === Album Card (Recordings page) === */
+.album-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.album-cover {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.album-cover:hover img {
+  transform: scale(1.03);
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album-info h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 600px) {
+  .album-card {
+    grid-template-columns: 1fr;
+  }
+
+  .album-cover {
+    max-width: 280px;
+  }
+}
+
+/* === CV Page === */
+.cv-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-section h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.cv-collab {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.cv-description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+  max-width: 560px;
+}
+
+.cv-note {
+  font-size: 0.8rem;
+  opacity: 0.45;
+  margin-top: 0.5rem;
+}
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cv-list li {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.cv-date {
+  flex: 0 0 5rem;
+  opacity: 0.5;
+  text-align: right;
+}
+
+.cv-entry {
+  flex: 1;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "poorfarmweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cdbzb/poorfarmweb.git",
+  "author": "guillermo webster <guillermo@cdbzb.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/index.html -d . --public-url ./",
+    "start": "parcel src/index.html"	
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "node-less": "^1.0.0",
+    "parcel-bundler": "^1.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "gh-pages": "^1.1.0",
+    "less": "^3.0.1"
+  }
+}
