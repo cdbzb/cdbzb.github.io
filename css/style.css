@@ -224,6 +224,7 @@ html, body {
   right: 0;
   padding: 2.5rem 1rem 1rem;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.85) 70%);
+  color: #fff;
   font-size: 0.95rem;
   font-weight: 400;
   letter-spacing: 0.05em;
