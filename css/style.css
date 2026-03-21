@@ -134,14 +134,18 @@ html, body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-      "opera" "video" "recordings"
-      "television" "installation" "perf";
+      "opera"
+      "video"
+      "rec"
+      "tv"
+      "inst"
+      "perf";
     height: auto;
     min-height: 100vh;
   }
 
   .tile {
-    min-height: 16vh;
+    min-height: 25vh;
   }
 
   .tile-label {
@@ -156,6 +160,50 @@ html, body {
 
   .site-header h1 {
     font-size: 1rem;
+  }
+
+  .page-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .page-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0;
+  }
+
+  .page-header nav a {
+    font-size: 0.75rem;
+    margin-right: 0.8rem;
+    line-height: 1.8;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .project-detail {
+    padding: 1.5rem 1rem;
+  }
+
+  .cv-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .cv-list li {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .cv-date {
+    text-align: left;
+    flex: none;
   }
 }
 
