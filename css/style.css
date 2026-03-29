@@ -14,11 +14,24 @@ html, body {
 
 /* === Header === */
 .site-header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 10;
   padding: 1.5rem 2rem;
+  background: url('../images/banner-poorfarm-front.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.site-header h1,
+.site-header .site-subtitle {
+  position: relative;
+  z-index: 1;
 }
 
 .site-header h1 {
@@ -27,7 +40,7 @@ html, body {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .site-subtitle {
@@ -35,8 +48,8 @@ html, body {
   font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
   margin-top: 0.2rem;
 }
 
@@ -49,7 +62,7 @@ html, body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 3px;
-  height: 100vh;
+  height: calc(100vh - 5.5rem);
   width: 100%;
 }
 
@@ -297,6 +310,21 @@ html, body {
   font-size: 0.75rem;
   font-weight: 300;
   opacity: 0.6;
+}
+
+/* === Back Link === */
+.back-link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #fff;
 }
 
 /* === Project Detail Page === */
