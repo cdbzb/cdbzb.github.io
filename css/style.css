@@ -392,6 +392,31 @@ html, body {
   opacity: 0.85;
 }
 
+img.zoomable {
+  cursor: zoom-in;
+}
+
+.image-lightbox {
+  border: none;
+  padding: 0;
+  background: transparent;
+  max-width: 95vw;
+  max-height: 95vh;
+}
+
+.image-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.image-lightbox img {
+  display: block;
+  max-width: 95vw;
+  max-height: 95vh;
+  width: auto;
+  height: auto;
+  cursor: zoom-out;
+}
+
 .project-player video {
   width: 100%;
   border-radius: 2px;
