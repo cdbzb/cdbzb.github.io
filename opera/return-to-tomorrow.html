@@ -25,8 +25,21 @@
   <article class="project-detail">
     <a href="../opera.html" class="back-link">&larr; Opera</a>
     <div class="project-info">
-      <p>Opera by Michael Webster, 2025.</p>
-      <p style="margin-top:0.75rem;">&ldquo;Return to Tomorrow&rdquo; is an opera based on a Star Trek episode written in the SuperCollider programming language, every note entered by hand. All sounds are synthesized, including the singing. Still images from the original 1968 TV show are seen fading into and out of the code that is being interpreted: a mashup of live-coding and classic TV. A voice emanates from a dead planet. Aliens who have lost their bodies seek to build humanoid robots to house their consciousnesses. Drama ensues&hellip;</p>
+      <p>Opera by Michael Webster. Developed 2021&ndash;2025.</p>
+      <p style="margin-top:0.75rem;">&ldquo;Return to Tomorrow&rdquo; is an opera based on a Star Trek episode, written in the SuperCollider programming language &mdash; every note entered by hand. All sounds are synthesized, including the singing. Still images from the original 1968 TV show fade into and out of the code that is being interpreted. A voice emanates from a dead planet. Aliens who have lost their bodies seek to build humanoid robots to house their consciousnesses. Drama ensues&hellip;</p>
+
+      <details class="program-note">
+        <summary>Read program note</summary>
+        <p>All of the music in &ldquo;Return to Tomorrow&rdquo; was made by typing text files in the SuperCollider programming language. I had gotten sick of interacting with music applications &mdash; having to learn where all the controls and buttons are and having to work through someone&rsquo;s metaphors &mdash; and decided to code my own. SuperCollider is a text-based system, so designing an interface was a matter of asking myself &ldquo;what do you want to type to get a certain result?&rdquo;</p>
+
+        <p>Something I could never really get to work for me, whether using musical notation or commercial music software, is representing speech-like rhythms. Bars are divided into beats and beats into halves and quarters &mdash; but our speech is not so tidy, and in a lot of my music I want the rhythms to be like speech rather than like whole-number divisions of beats or bars.</p>
+
+        <p>So in my system, I index all of the music not to bars and beats, or minutes and seconds, but to lines of text (in this case the whole script of a Star Trek episode). Musical notes and gestures are attached to syllables. If I were setting the phrase &ldquo;you are a lively hippopotamus&rdquo; I might have a trill which swells up starting at the &lsquo;li&rsquo; in &lsquo;lively&rsquo; and stops at the &lsquo;pot&rsquo; in &lsquo;potamus&rsquo;. To tell the software how much time belongs to each syllable, I have a little tool that lets me tap out the rhythms on my laptop keyboard. And if I re-tap those rhythms at any time, say to draw out the word &lsquo;lively&rsquo; for emphasis, all of the music, even the &ldquo;singing&rdquo;, will reflow to adapt to the new rhythms &mdash; my trill will still stop at &lsquo;pot&rsquo;.</p>
+
+        <p>The &ldquo;singing&rdquo; is rendered by a Vocaloid-style voice synthesizer &mdash; one of a family of tools at the heart of a subculture on Japanese and Chinese video sites like Niconico and bilibili, where mostly young fans remake pop songs and host channels fronted by the voices&rsquo; anime avatars. For the regular Star Trek crew I used newer AI-based voices (Xuan Yu, Feng Li, Cheng Xiou, and Kevin); the aliens (spoiler alert!) had to get older sample-based voices (Aiko and Genbu) who can&rsquo;t really do English phonemes&hellip; For this project I wrote some code that &ldquo;translates&rdquo; my SuperCollider code into the synth&rsquo;s project files, which then renders them and sends them back to SuperCollider to play, so that they can re-flow with the rest of the music. So there&rsquo;s nothing &ldquo;recorded&rdquo; other than the timing of the syllables &mdash; when you hear the piece, you are hearing the poor computer reading through the instructions and sending out the results. You can see the code being interpreted in the left panel, and responses from the interpreter in the &ldquo;Post&rdquo; window on the right.</p>
+
+        <p>And that&rsquo;s not unlike how I wrote the piece, once the system was working&hellip; I read the lines of text, hear what they say if I can, and render a musical thought by typing code. The lines just burble by. And what did I hear? A story about a voice with no body from a dead planet &mdash; its yearnings and regrets. And weirdly, the AI that sings the disembodied voice&rsquo;s lines was trained on the performances of a real person who might be dead for all I know&hellip; As I wrote the piece I found myself meditating on our situation; some part of <em>us</em> has left <em>our</em> bodies perhaps! And sometimes I felt as though the whole script was itself some charming awkward bodiless voice reaching out from a dead planet (the 1960s!), or that my voice(s) are&hellip;</p>
+      </details>
     </div>
 
     <section class="project-section">
@@ -62,6 +75,7 @@
         <img src="../images/return-installation-2.png" alt="Return to Tomorrow installation — center view">
         <img src="../images/return-installation-3.png" alt="Return to Tomorrow installation — perspective view">
       </div>
+      <p style="margin-top:1rem; max-width:640px; line-height:1.6;">The diagrams above show a large-scale configuration: audio and video are computer-rendered in real time across six video monitors, two projectors, and a speaker array. The work has also been shown in single-channel projection and on a single monitor with speaker ring.</p>
     </section>
 
     <section class="project-section">
@@ -70,6 +84,7 @@
         <li>2025 &mdash; Seoul AI Film Festival (excerpt)</li>
         <li>2025 &mdash; SuperCollider Symposium, Johns Hopkins University, Washington, D.C. (work in progress)</li>
       </ul>
+      <p style="margin-top:1.25rem;">For inquiries, please <a href="../contact.html">contact Michael Webster</a>.</p>
     </section>
   </article>
 <script data-goatcounter="https://cdbzb.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

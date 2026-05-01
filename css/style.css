@@ -352,6 +352,46 @@ html, body {
   max-width: 640px;
 }
 
+.program-note {
+  margin-top: 1rem;
+  max-width: 640px;
+}
+
+.program-note summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding: 0.4rem 0;
+  list-style: none;
+}
+
+.program-note summary::-webkit-details-marker {
+  display: none;
+}
+
+.program-note summary::before {
+  content: '+ ';
+  display: inline-block;
+  width: 1em;
+}
+
+.program-note[open] summary::before {
+  content: '\2212  ';
+}
+
+.program-note summary:hover {
+  opacity: 1;
+}
+
+.program-note p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  opacity: 0.85;
+}
+
 .project-player video {
   width: 100%;
   border-radius: 2px;
