@@ -34,29 +34,77 @@
         Foundation for Contemporary Arts Emergency Grant
       </p>
     </div>
-    <div class="project-player">
-      <div class="video-embed">
-        <iframe src="https://player.vimeo.com/video/1142749918"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-
     <section class="project-section">
       <h2>Trailer</h2>
       <div class="project-player">
-        <div class="video-embed">
-          <iframe src="https://player.vimeo.com/video/1178236401?h=8c3a34a88a"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen>
-          </iframe>
+        <div class="video-embed video-poster-wrap"
+             data-vimeo-id="1178236401"
+             data-vimeo-hash="8c3a34a88a"
+             data-fullscreen="true">
+          <img src="../images/niceday-thebox-trailer-poster.jpg" alt="Nice Day for the Races trailer — click to play" class="video-poster">
+          <div class="play-btn"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Complete performance</h2>
+      <div class="project-player">
+        <div class="video-embed video-poster-wrap"
+             data-vimeo-id="1142749918"
+             data-fullscreen="true">
+          <img src="../images/niceday-thebox-poster.jpg" alt="Nice Day for the Races complete performance — click to play" class="video-poster">
+          <div class="play-btn"></div>
         </div>
       </div>
     </section>
   </article>
+
+  <script>
+    (function () {
+      var overlay = null;
+
+      function onKey(e) {
+        if (e.key === 'Escape') closeLightbox();
+      }
+
+      function closeLightbox() {
+        if (!overlay) return;
+        overlay.remove();
+        overlay = null;
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', onKey);
+      }
+
+      function openLightbox(url) {
+        overlay = document.createElement('div');
+        overlay.className = 'video-lightbox';
+        overlay.innerHTML =
+          '<button class="video-lightbox-close" aria-label="Close">&times;</button>' +
+          '<div class="video-lightbox-frame">' +
+            '<iframe src="' + url + '" frameborder="0" ' +
+              'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>' +
+          '</div>';
+        overlay.querySelector('.video-lightbox-close').addEventListener('click', closeLightbox);
+        overlay.addEventListener('click', function (e) {
+          if (e.target === overlay) closeLightbox();
+        });
+        document.body.appendChild(overlay);
+        document.body.style.overflow = 'hidden';
+        document.addEventListener('keydown', onKey);
+      }
+
+      document.querySelectorAll('.video-poster-wrap[data-vimeo-id]').forEach(function (wrap) {
+        wrap.addEventListener('click', function () {
+          var id = wrap.dataset.vimeoId;
+          var hash = wrap.dataset.vimeoHash;
+          var params = ['autoplay=1'];
+          if (hash) params.push('h=' + hash);
+          openLightbox('https://player.vimeo.com/video/' + id + '?' + params.join('&'));
+        });
+      });
+    })();
+  </script>
 <script data-goatcounter="https://cdbzb.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
