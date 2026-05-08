@@ -487,6 +487,85 @@ img.zoomable {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.video-poster-wrap.video-gated .gated-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  transition: background 0.2s ease;
+}
+
+.video-poster-wrap.video-gated:hover .gated-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.video-poster-wrap.video-gated .gated-text {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+.video-poster-wrap.video-gated .gated-text span {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.video-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 2vw;
+}
+
+.video-lightbox-frame {
+  position: relative;
+  width: 100%;
+  max-width: calc(96vh * 16 / 9);
+  aspect-ratio: 16 / 9;
+}
+
+.video-lightbox-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.video-lightbox-close {
+  position: absolute;
+  top: 1.5vh;
+  right: 1.5vw;
+  width: 44px;
+  height: 44px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
+  z-index: 1;
+}
+
+.video-lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.85);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
 /* === Project Sections (multiple performances on one page) === */
 .project-section {
   margin-bottom: 3rem;

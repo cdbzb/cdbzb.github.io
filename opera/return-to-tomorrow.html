@@ -45,12 +45,12 @@
     <section class="project-section">
       <h2>Excerpt (5 min)</h2>
       <div class="project-player">
-        <div class="video-embed">
-          <iframe src="https://player.vimeo.com/video/1188453992?h=0618b4cdf9"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen>
-          </iframe>
+        <div class="video-embed video-poster-wrap"
+             data-vimeo-id="1188453992"
+             data-vimeo-hash="0618b4cdf9"
+             data-fullscreen="true">
+          <img src="../images/return-to-tomorrow-poster.jpg" alt="Return to Tomorrow excerpt — click to play" class="video-poster">
+          <div class="play-btn"></div>
         </div>
       </div>
       <p style="margin-top:0.75rem; max-width:640px; line-height:1.6; opacity:0.75; font-size:0.9rem;">Prepared for a 2025 Seoul festival screening. Korean subtitles burned in.</p>
@@ -59,12 +59,12 @@
     <section class="project-section">
       <h2>Full work (58 min)</h2>
       <div class="project-player">
-        <div class="video-embed">
-          <iframe src="https://player.vimeo.com/video/944533415"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen>
-          </iframe>
+        <div class="video-embed video-poster-wrap video-gated"
+             data-vimeo-id="944533415">
+          <img src="../images/return-to-tomorrow.jpg" alt="Return to Tomorrow full work — password protected" class="video-poster">
+          <div class="gated-overlay">
+            <div class="gated-text">Password protected<span>Click to enter password</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -120,6 +120,68 @@
       });
       dialog.addEventListener('click', function (e) {
         if (e.target === dialog || e.target === dialogImg) dialog.close();
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var overlay = null;
+
+      function onKey(e) {
+        if (e.key === 'Escape') closeLightbox();
+      }
+
+      function closeLightbox() {
+        if (!overlay) return;
+        overlay.remove();
+        overlay = null;
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', onKey);
+      }
+
+      function openLightbox(url) {
+        overlay = document.createElement('div');
+        overlay.className = 'video-lightbox';
+        overlay.innerHTML =
+          '<button class="video-lightbox-close" aria-label="Close">&times;</button>' +
+          '<div class="video-lightbox-frame">' +
+            '<iframe src="' + url + '" frameborder="0" ' +
+              'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>' +
+          '</div>';
+        overlay.querySelector('.video-lightbox-close').addEventListener('click', closeLightbox);
+        overlay.addEventListener('click', function (e) {
+          if (e.target === overlay) closeLightbox();
+        });
+        document.body.appendChild(overlay);
+        document.body.style.overflow = 'hidden';
+        document.addEventListener('keydown', onKey);
+      }
+
+      document.querySelectorAll('.video-poster-wrap[data-vimeo-id]').forEach(function (wrap) {
+        wrap.addEventListener('click', function () {
+          var id = wrap.dataset.vimeoId;
+          var hash = wrap.dataset.vimeoHash;
+          var wantFs = wrap.dataset.fullscreen === 'true';
+
+          if (wantFs) {
+            var params = ['autoplay=1'];
+            if (hash) params.push('h=' + hash);
+            openLightbox('https://player.vimeo.com/video/' + id + '?' + params.join('&'));
+          } else {
+            var inplaceParams = [];
+            if (hash) inplaceParams.push('h=' + hash);
+            var inplaceUrl = 'https://player.vimeo.com/video/' + id +
+              (inplaceParams.length ? '?' + inplaceParams.join('&') : '');
+            var iframe = document.createElement('iframe');
+            iframe.src = inplaceUrl;
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            wrap.innerHTML = '';
+            wrap.appendChild(iframe);
+            wrap.classList.remove('video-poster-wrap', 'video-gated');
+          }
+        });
       });
     })();
   </script>
