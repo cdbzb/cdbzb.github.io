@@ -62,8 +62,30 @@ html, body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 3px;
-  height: calc(100vh - 5.5rem);
+  height: calc(100vh - 5.5rem - 2.2rem);
   width: 100%;
+}
+
+/* === Home Footer === */
+.site-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.7rem 2rem;
+  background: #111;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-footer a:hover {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* === Individual Tiles === */
