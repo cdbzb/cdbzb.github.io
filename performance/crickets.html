@@ -25,36 +25,47 @@
   <article class="project-detail">
     <div class="project-info">
       <p>A collaboration with artist <a href="https://mungothomson.com/work/crickets/" class="text-link">Mungo Thomson</a>. Thomson sourced field recordings of crickets from parks and forests around the world, which were transcribed into a 25-movement score for a 17-member classical ensemble — violin, flute, clarinet, and percussion. Composed, orchestrated, and conducted by Michael Webster.</p>
-      <p class="project-meta">Score published by LAXART / Christoph Keller Editions / JRP|Ringier, 2014. <a href="https://www.lespressesdureel.com/EN/ouvrage.php?id=3394" class="text-link">Available from Les presses du r&eacute;el</a></p>
     </div>
 
     <section class="project-section">
-      <h2>Greystone Mansion, Los Angeles</h2>
-      <p class="project-meta">January 28, 2012 &mdash; The Ball of Artists, Pacific Standard Time Public Art and Performance Festival</p>
+      <h2>Excerpt</h2>
       <div class="project-player">
         <div class="video-embed">
-          <iframe src="https://player.vimeo.com/video/1175331439"
+          <iframe src="https://player.vimeo.com/video/203923590?title=0&byline=0&portrait=0"
                   frameborder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowfullscreen>
           </iframe>
         </div>
       </div>
-      <div class="photo-row">
-        <img src="../images/crickets-greystone.jpg" alt="Crickets performed at Greystone Mansion, Los Angeles">
+      <p class="project-meta">Video courtesy Mungo Thomson</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Greystone Mansion, Los Angeles</h2>
+      <p class="project-meta">January 28, 2012 &mdash; The Ball of Artists, Pacific Standard Time Public Art and Performance Festival</p>
+      <div class="project-player">
+        <div class="video-embed video-poster-wrap video-gated"
+             data-vimeo-id="1175331439"
+             data-fullscreen="true">
+          <img src="../images/crickets-greystone-poster.jpg" alt="Crickets at Greystone Mansion — password protected" class="video-poster">
+          <div class="gated-overlay">
+            <div class="gated-text">Password protected<span>Click to enter password</span></div>
+          </div>
+        </div>
       </div>
-      <p class="photo-credit">Photo: Mungo Thomson</p>
     </section>
 
     <section class="project-section">
       <h2>REDCAT, Los Angeles</h2>
       <div class="project-player">
-        <div class="video-embed">
-          <iframe src="https://player.vimeo.com/video/160675936"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen>
-          </iframe>
+        <div class="video-embed video-poster-wrap video-gated"
+             data-vimeo-id="160675936"
+             data-fullscreen="true">
+          <img src="../images/crickets-redcat-poster.jpg" alt="Crickets at REDCAT — password protected" class="video-poster">
+          <div class="gated-overlay">
+            <div class="gated-text">Password protected<span>Click to enter password</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -68,7 +79,75 @@
       </div>
       <p class="photo-credit">Photos: Ayanohisa</p>
     </section>
+
+    <section class="project-section">
+      <h2>Published Score</h2>
+      <p class="project-meta">LAXART / Christoph Keller Editions / JRP|Ringier, 2014 &mdash; <a href="https://www.lespressesdureel.com/EN/ouvrage.php?id=3394" class="text-link">Available from Les presses du r&eacute;el</a></p>
+      <a href="https://www.lespressesdureel.com/EN/ouvrage.php?id=3394"><img src="../images/crickets-score-book.jpg" alt="Crickets published score — book cover" style="width:100%; max-width:300px; border-radius:2px; display:block;"></a>
+    </section>
   </article>
+  <script>
+    (function () {
+      var overlay = null;
+
+      function onKey(e) {
+        if (e.key === 'Escape') closeLightbox();
+      }
+
+      function closeLightbox() {
+        if (!overlay) return;
+        overlay.remove();
+        overlay = null;
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', onKey);
+      }
+
+      function openLightbox(url) {
+        overlay = document.createElement('div');
+        overlay.className = 'video-lightbox';
+        overlay.innerHTML =
+          '<button class="video-lightbox-close" aria-label="Close">&times;</button>' +
+          '<div class="video-lightbox-frame">' +
+            '<iframe src="' + url + '" frameborder="0" ' +
+              'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>' +
+          '</div>';
+        overlay.querySelector('.video-lightbox-close').addEventListener('click', closeLightbox);
+        overlay.addEventListener('click', function (e) {
+          if (e.target === overlay) closeLightbox();
+        });
+        document.body.appendChild(overlay);
+        document.body.style.overflow = 'hidden';
+        document.addEventListener('keydown', onKey);
+      }
+
+      document.querySelectorAll('.video-poster-wrap[data-vimeo-id]').forEach(function (wrap) {
+        wrap.addEventListener('click', function () {
+          var id = wrap.dataset.vimeoId;
+          var hash = wrap.dataset.vimeoHash;
+          var wantFs = wrap.dataset.fullscreen === 'true';
+
+          if (wantFs) {
+            var params = ['autoplay=1'];
+            if (hash) params.push('h=' + hash);
+            openLightbox('https://player.vimeo.com/video/' + id + '?' + params.join('&'));
+          } else {
+            var inplaceParams = [];
+            if (hash) inplaceParams.push('h=' + hash);
+            var inplaceUrl = 'https://player.vimeo.com/video/' + id +
+              (inplaceParams.length ? '?' + inplaceParams.join('&') : '');
+            var iframe = document.createElement('iframe');
+            iframe.src = inplaceUrl;
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+            iframe.setAttribute('allowfullscreen', '');
+            wrap.innerHTML = '';
+            wrap.appendChild(iframe);
+            wrap.classList.remove('video-poster-wrap', 'video-gated');
+          }
+        });
+      });
+    })();
+  </script>
 <script data-goatcounter="https://cdbzb.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

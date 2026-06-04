@@ -515,13 +515,13 @@ img.zoomable {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
   transition: background 0.2s ease;
 }
 
 .video-poster-wrap.video-gated:hover .gated-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .video-poster-wrap.video-gated .gated-text {
