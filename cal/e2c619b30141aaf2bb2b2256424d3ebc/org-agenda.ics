@@ -5,4 +5,277 @@ PRODID:-//michael webster//Emacs with Org mode//EN
 X-WR-TIMEZONE:America/Los_Angeles
 X-WR-CALDESC:Exported from Org (:cal: tagged)
 CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-24B4212A-C099-4D36-8E98-54BC6D97202E
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:Hilton SF Financial District check-in <2026-05-23 Sat>
+DESCRIPTION:Confirmation 3453456803\, depart May 26
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-47540E25-2F39-44E7-A130-DEA8EEA1D89F
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Hilton SF Financial District check-out <2026-05-26 Tue>
+DESCRIPTION:Confirmation 3453456803
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-6D4ACA06-3D6B-445B-96D4-3ACF1A0D11C7
+DTSTART:20261007T123000
+DTEND:20261007T143000
+SUMMARY:Appt at City of Angels Dentistry <2026-10-07 Wed 12:30>
+DESCRIPTION:1127 Wilshire Blvd #1100\, Los Angeles
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-AAFAC0BC-5178-49B2-9B62-5EADDE7A7889
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Delta return flight <2026-05-26 Tue>
+DESCRIPTION:Confirmation HI6V9N
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-84BF8525-7A69-4B4C-80F8-B1D9E71F2F8D
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+SUMMARY:Coffee with Maura Brewer <2026-05-28 Thu>
+DESCRIPTION:Morning\, location TBD via text
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-C98A6879-D314-438D-9711-9F21022D0E0F
+DTSTART:20260526T115500
+DTEND:20260526T135500
+SUMMARY:Delta DL2272 SFO→LAX <2026-05-26 Tue 11:55>
+DESCRIPTION:Confirmation HI6V9N\, arrives 1:29 PM (duplicate of May 23 scan
+ \, with\ndetails)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-E5D4160B-A2DD-49E6-A026-11B6AB8A6784
+DTSTART:20260601T113000
+DTEND:20260601T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-01 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-688192E7-E535-44C9-8284-4E4D260FA61C
+DTSTART:20260608T113000
+DTEND:20260608T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-08 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-B76BBB6E-84AE-49BC-B105-B4C003C024D3
+DTSTART:20260615T113000
+DTEND:20260615T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-15 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-82CF4190-70DE-4318-9F71-A0F0681295EC
+DTSTART:20260622T113000
+DTEND:20260622T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-22 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-736ECDFF-C74B-43D9-91E3-7F0621B59974
+DTSTART:20260629T113000
+DTEND:20260629T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-29 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-575C1F17-62DC-4B02-950A-F899C8D3EAFB
+DTSTART:20260611T070000
+DTEND:20260611T090000
+SUMMARY:Marx Corporations 2026 AGM (virtual) <2026-06-11 Thu 07:00>
+DESCRIPTION:10:00 AM EST (07:00 PDT) — virtual via Juniper Square\; proxy f
+ orms due\nJune 10\; Marx Realty / investor-relations@marxrealty.com
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-A9F70588-6016-432C-8ED2-CBEDFE292FCD
+DTSTART:20260610T150000
+DTEND:20260610T170000
+SUMMARY:Appointment with Sachiko Reece <2026-06-10 Wed 15:00>
+DESCRIPTION:Sachiko Reece (takisan2@icloud.com) — confirmed via email (next
+ \nsession)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-D1DCDF82-C7B3-4328-BC66-C3A39BA3C1D6
+DTSTART:20260617T140000
+DTEND:20260617T160000
+SUMMARY:Metro Fare Enforcement meeting (Enforce the Fares / SD1) <2026-06-1
+ 7 Wed 14:00>
+DESCRIPTION:Microsoft Teams (Meeting ID 293 783 511 178 606)\; organizer An
+ nette\nTrejo / Marilyn Garcia\, LA County BOS SD1\; STATUS:CONFIRMED
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-DA7CD563-5459-48A6-BDE3-02807ADD3575
+DTSTART:20260605T113000
+DTEND:20260605T133000
+SUMMARY:Appointment at City of Angels Dentistry <2026-06-05 Fri 11:30>
+DESCRIPTION:1127 Wilshire Blvd #1100\, Los Angeles\, CA 90017 — City of Ang
+ els\nDentistry (team@cofadentistry.com)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-49B5570B-7CD9-49B6-ADD6-9D069A495543
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Yeominrak performance (Hyo Jin Kim) <2026-06-10 Wed>
+DESCRIPTION:Hyo Jin Kim (lalahyojin@gmail.com) — upcoming June 10th perform
+ ance\,\nYeomillak/Yeominrak project
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-88266F74-58C1-490D-8B0A-5BEC836182E6
+DTSTART:20260616T130000
+DTEND:20260616T150000
+SUMMARY:Lunch with Susan Morgan & Lawson <2026-06-16 Tue 13:00>
+DESCRIPTION:At the Morgans' house — confirmed via email (smpanmure@sbcgloba
+ l.net)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-8A52DB55-5B83-460E-B4C5-84CCE2D27BD4
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260619
+SUMMARY:reconnect with soo kim <2026-06-18 Thu>
+DESCRIPTION:send this text re: the river - here’s a clip from that movie I 
+ was\n telling you about that Kerry Tribe made about LA River which I did\n
+  sound and music for -(she also made me ride the whole thing with her\n on
+  a bike for research purposes).\n <https://www.1301pe.com/news/2018/9/28/k
+ erry-tribe-exquisite-corpse-screening-at-descanso-gardens-for-the-group-ex
+ hibition-la-reina-de-los-ngeles>
+CATEGORIES:cal,outreach,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-3C53DA31-396B-4F31-8223-546B7FDEE282
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Request estate account transcript (Form 4506-T) — check for TC 421 
+ <2026-10-08 Thu>
+DESCRIPTION:Brenda's Form 706 was mailed by Haislet's office 2026-04-08.  I
+ RS says\nwait 6 months after filing before requesting an account transcrip
+ t.\nTC 421 on the transcript = return accepted as filed / exam complete\n(
+ functional equivalent of the closing letter\, which is no longer sent\naut
+ omatically).  If no TC 421 yet\, check again later. Closing letter\n(optio
+ nal\, $67 via Pay.gov) can be requested 9 months after filing\n(~Jan 2027)
+  or any time once TC 421 appears.\n\nCan do this myself (signed the 706 as
+  executor — no need to involve\nHaislet): Form 4506-T: <https://www.irs.go
+ v/pub/irs-pdf/f4506t.pdf>\n• Line 1a: Estate of Brenda A. Webster\n• Line 
+ 1b: Brenda's SSN (NOT the estate EIN — 706 account is keyed to\n  decedent
+  SSN)\n• Line 3: my name\, title "Executor"\, address — must match what's 
+ on\n  the filed 706\n• Line 6: 706\, check box 6b (Account Transcript) — o
+ nly valid option\n  for estate tax\n• Line 9: period = date-of-death year-
+ end\n• Check attestation box\, sign\, date\, Title line = "Executor" (else
+ \n  rejected)\n• Send to Ogden UT RAIVS team (CA domicile) — fax faster th
+ an mail\,\n  use fax number from the chart in the current form's instructi
+ ons\n• Transcript arrives by mail in a few weeks\; look for TC 421 in\n  t
+ ransaction list\nPhone status check: IRS estate & gift tax line 866-699-40
+ 83 Ref:\n<https://www.irs.gov/businesses/small-businesses-self-employed/tr
+ anscripts-in-lieu-of-estate-tax-closing-letters>
+CATEGORIES:cal,estate,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-E1D63CEE-8257-4D53-B8C5-886ECE461DAF
+DTSTART:20260604T150000
+DTEND:20260604T170000
+SUMMARY:Soo-Young Chin & Tom visit
+DESCRIPTION:<2026-06-04 Thu 15:00> Soo-Young and Tom stopping by 1942 N Alv
+ arado\nThursday afternoon\, en route from Burbank (land ~2:30) to their\nF
+ riendBnB. In town for a 6/6 Silverlake wedding (also back 6/21 for\nRiver 
+ Solstice).  Scheduled via iMessage 5/26.
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-7A05E042-21D1-4110-8E19-69B307206E4C
+DTSTART:20260528T120000
+DTEND:20260528T140000
+SUMMARY:Maura lunch <2026-05-28 Thu 12:00>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-014C0260-AF1B-456A-BCDD-4DF247006DA9
+DTSTART:20260523T093000
+DTEND:20260523T113000
+SUMMARY:Delta 2272 LAX→SFO (HI6V9N) <2026-05-23 Sat 09:30>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-A464874B-63B4-4B65-989F-78C3667612FF
+DTSTART:20260526T115500
+DTEND:20260526T135500
+SUMMARY:Delta 2272 SFO→LAX (HI6V9N) <2026-05-26 Tue 11:55>
+DESCRIPTION:***
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-7D9588BC-6C36-4282-8ADD-0343444980EF
+DTSTART:20260527T150000
+DTEND:20260527T170000
+SUMMARY:Sachiko <2026-05-27 Wed 15:00>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-8F4E444F-5AE8-4D96-ADB7-18F24ABB13D6
+DTSTART:20260520T120000
+DTEND:20260520T140000
+SUMMARY:Fumio <2026-05-20 Wed 12:00>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-C388D438-2EDD-477E-9C95-DAFBDEA6DD81
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+SUMMARY:Brian lunch <2026-05-22 Fri>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260614T023853Z
+UID:TS1-115CA682-EDF7-4082-BBF1-E99638E977A5
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+SUMMARY:Maura coffee <2026-05-28 Thu>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
 END:VCALENDAR
