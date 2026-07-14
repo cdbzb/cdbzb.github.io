@@ -374,6 +374,29 @@ html, body {
   max-width: 640px;
 }
 
+.project-blurb {
+  margin: 0 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  max-width: 640px;
+}
+
+.project-blurb p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.project-blurb cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+
 .program-note {
   margin-top: 1rem;
   max-width: 640px;
