@@ -23,9 +23,14 @@
   </header>
 
   <article class="cv-content">
-    <p style="font-size:1.1rem; line-height:1.8;">For inquiries, please email<br><a id="contact-link" class="text-link" style="unicode-bidi:bidi-override; direction:rtl;">moc.cam@revauqimes</a></p>
+    <p style="font-size:1.1rem; line-height:1.8;">For inquiries, please email<br><a id="contact-link" class="text-link">semiquaver <em>at</em> mac <em>dot</em> com</a></p>
     <script>
-      (function(){var a=document.getElementById('contact-link');var e=['semiquaver','mac.com'].join('@');a.href='mai'+'lto:'+e;})();
+      (function(){
+        var a = document.getElementById('contact-link');
+        var e = ['semiquaver', 'mac.com'].join('@');
+        a.textContent = e;
+        a.href = 'mai' + 'lto:' + e;
+      })();
     </script>
   </article>
 <script data-goatcounter="https://cdbzb.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

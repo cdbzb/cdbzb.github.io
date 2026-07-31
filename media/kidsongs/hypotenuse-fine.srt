@@ -1,0 +1,44 @@
+1
+00:00:00,000 --> 00:00:09,400
+ 1 The hypotenuse is the longest sight;
+
+2
+00:00:09,400 --> 00:00:16,470
+ the hypotenuse in weak means the
+
+3
+00:00:16,470 --> 00:00:20,000
+ longest sight.
+
+4
+00:00:23,000 --> 00:00:32,600
+ 2 The hypotenuse is the longest sight;
+
+5
+00:00:32,600 --> 00:00:44,000
+ the hypotenuse is the longest sight.
+
+6
+00:00:49,000 --> 00:00:55,370
+ 3 The hypotenuse is the longest sight;
+
+7
+00:00:55,370 --> 00:00:59,000
+ the hypotenuse is the longest sight.
+
+8
+00:01:00,000 --> 00:01:02,980
+ 4 The hypotenuse is the longest sight;
+
+9
+00:01:02,980 --> 00:01:07,000
+ the hypotenuse is the longest sight.
+
+10
+00:01:08,000 --> 00:01:09,530
+ 4 The hypotenuse is the longest sight;
+
+11
+00:01:09,530 --> 00:01:21,000
+ the hypotenuse is the longest sight.
+

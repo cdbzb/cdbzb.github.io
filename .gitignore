@@ -2,3 +2,4 @@
 .nfs*
 thumbs/
 tools/
+.claude/

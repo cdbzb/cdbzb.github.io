@@ -1,0 +1,51 @@
+1
+00:00:00,420 --> 00:00:04,080
+The hypotenuse
+
+2
+00:00:05,260 --> 00:00:13,320
+is the longest side
+
+3
+00:00:13,320 --> 00:00:23,990
+Yeah, hypotenuse in Greek means "longest side"
+
+4
+00:00:23,990 --> 00:00:28,390
+Pythagoras has a theorem that states
+
+5
+00:00:30,150 --> 00:00:33,450
+that its square is equal to the sum
+
+6
+00:00:34,010 --> 00:00:37,730
+of the squares of the other two sides
+
+7
+00:00:38,910 --> 00:00:44,230
+The hypotenuse is the longest side
+
+8
+00:00:47,630 --> 00:00:54,870
+in a triangle, when the angle is right
+
+9
+00:00:57,510 --> 00:01:04,810
+And Pythagoras' theorem, which he wrote long ago,
+
+10
+00:01:05,010 --> 00:01:08,590
+says its sum is equal to the sum
+
+11
+00:01:09,130 --> 00:01:12,350
+of the squares of the other two sides
+
+12
+00:01:12,970 --> 00:01:16,250
+Yeah, its square is equal to the sum
+
+13
+00:01:16,810 --> 00:01:19,750
+of the squares of the other two sides
