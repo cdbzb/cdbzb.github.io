@@ -5,4 +5,553 @@ PRODID:-//michael webster//Emacs with Org mode//EN
 X-WR-TIMEZONE:America/Los_Angeles
 X-WR-CALDESC:Exported from Org (:cal: tagged)
 CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-E2E2A03D-F80D-4C9D-98BA-C73C3959D509
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:Hilton SF Financial District check-in <2026-05-23 Sat>
+DESCRIPTION:Confirmation 3453456803\, depart May 26
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-EE880803-ED6C-4659-86E7-6F4190710A00
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Hilton SF Financial District check-out <2026-05-26 Tue>
+DESCRIPTION:Confirmation 3453456803
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-31B346AE-C34E-46E1-A561-583AA066D1E4
+DTSTART:20261007T123000
+DTEND:20261007T143000
+SUMMARY:Appt at City of Angels Dentistry <2026-10-07 Wed 12:30>
+DESCRIPTION:1127 Wilshire Blvd #1100\, Los Angeles
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-10201CE7-B136-458A-8F50-5C983F7CFD5C
+DTSTART;VALUE=DATE:20260526
+DTEND;VALUE=DATE:20260527
+SUMMARY:Delta return flight <2026-05-26 Tue>
+DESCRIPTION:Confirmation HI6V9N
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-E8BFE667-91D2-429E-816C-1A97B462C41F
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+SUMMARY:Coffee with Maura Brewer <2026-05-28 Thu>
+DESCRIPTION:Morning\, location TBD via text
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-533DC095-6BA2-4ADB-8891-CBF962A23F45
+DTSTART:20260526T115500
+DTEND:20260526T135500
+SUMMARY:Delta DL2272 SFO→LAX <2026-05-26 Tue 11:55>
+DESCRIPTION:Confirmation HI6V9N\, arrives 1:29 PM (duplicate of May 23 scan
+ \, with\ndetails)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-1A5F20A2-7FBF-44D5-83FF-6AE58E0DF303
+DTSTART:20260601T113000
+DTEND:20260601T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-01 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-9B527AE0-C8B7-4516-ACB7-4FD63AF6B946
+DTSTART:20260608T113000
+DTEND:20260608T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-08 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-AB7E5F7B-C98F-4213-9559-1ED7B684BB9B
+DTSTART:20260615T113000
+DTEND:20260615T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-15 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-6655A3DE-E294-4721-8DFB-93FF644BC6BC
+DTSTART:20260622T113000
+DTEND:20260622T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-22 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-DA1954C9-03F9-4E83-B49F-1A79E788135B
+DTSTART:20260629T113000
+DTEND:20260629T133000
+SUMMARY:EOS PT60 w/ Erik Gomez <2026-06-29 Mon 11:30>
+DESCRIPTION:EOS CA Downtown LA\, 701 W Cesar E Chavez Ave
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-BB4DE4BE-819F-40C1-88EA-57922C034206
+DTSTART:20260611T070000
+DTEND:20260611T090000
+SUMMARY:Marx Corporations 2026 AGM (virtual) <2026-06-11 Thu 07:00>
+DESCRIPTION:10:00 AM EST (07:00 PDT) — virtual via Juniper Square\; proxy f
+ orms due\nJune 10\; Marx Realty / investor-relations@marxrealty.com
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-CAC0A8AD-11F2-4ACF-BB31-B9A738EA0F74
+DTSTART:20260610T150000
+DTEND:20260610T170000
+SUMMARY:Appointment with Sachiko Reece <2026-06-10 Wed 15:00>
+DESCRIPTION:Sachiko Reece (takisan2@icloud.com) — confirmed via email (next
+ \nsession)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-A8AE52F7-8C90-4BAC-B55C-034267B81E93
+DTSTART:20260617T140000
+DTEND:20260617T160000
+SUMMARY:Metro Fare Enforcement meeting (Enforce the Fares / SD1) <2026-06-1
+ 7 Wed 14:00>
+DESCRIPTION:Microsoft Teams (Meeting ID 293 783 511 178 606)\; organizer An
+ nette\nTrejo / Marilyn Garcia\, LA County BOS SD1\; STATUS:CONFIRMED
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-42FA5E20-1F8C-4697-B964-E423A97D4C06
+DTSTART:20260605T113000
+DTEND:20260605T133000
+SUMMARY:Appointment at City of Angels Dentistry <2026-06-05 Fri 11:30>
+DESCRIPTION:1127 Wilshire Blvd #1100\, Los Angeles\, CA 90017 — City of Ang
+ els\nDentistry (team@cofadentistry.com)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-52F85A55-E5E0-42A5-8EAD-84D258C13FD8
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Yeominrak performance (Hyo Jin Kim) <2026-06-10 Wed>
+DESCRIPTION:Hyo Jin Kim (lalahyojin@gmail.com) — upcoming June 10th perform
+ ance\,\nYeomillak/Yeominrak project
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-4695E7D3-D699-4F47-9AD3-B062082EE666
+DTSTART:20260616T130000
+DTEND:20260616T150000
+SUMMARY:Lunch with Susan Morgan & Lawson <2026-06-16 Tue 13:00>
+DESCRIPTION:At the Morgans' house — confirmed via email (smpanmure@sbcgloba
+ l.net)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-A1E6F337-E062-46C1-98D2-927D249D672D
+DTSTART:20260615T113000
+DTEND:20260615T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-06-15 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-FB695105-75DE-4B8B-B2C5-1D94BFEF645B
+DTSTART;VALUE=DATE:20260623
+DTEND;VALUE=DATE:20260624
+SUMMARY:LADWP water & electric turn-off\, 3440 Atwater Ave <2026-06-23 Tue>
+DESCRIPTION:LADWP Turn Off Service request — Service Request ID# 6482174383
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-9A9EC856-E1D7-4477-9FE6-F9A45B5D27DB
+DTSTART:20260622T140000
+DTEND:20260622T160000
+SUMMARY:Zoom w/ Eric Pfeffer (artwork agreement) <2026-06-22 Mon 14:00>
+DESCRIPTION:14:00 PT / 17:00 ET — Zoom Meeting ID 886 9846 0067\, Passcode 
+ 306885\;\nw/ C. Robinson\, Lisa Webster\, Rebecca Stoller
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-6DED285F-523F-420E-9BAA-43B35E30E240
+DTSTART:20260622T113000
+DTEND:20260622T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-06-22 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-212295F2-6503-445B-8AB0-CF1A9277928A
+DTSTART:20260701T150000
+DTEND:20260701T170000
+SUMMARY:Appointment with Sachiko Reece <2026-07-01 Wed 15:00>
+DESCRIPTION:Sachiko Reece (takisan2@icloud.com) — confirmed via email ("See
+  you\nJuly 1st at 3 PM")
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-BCEAFBC3-3F0A-416E-99E1-5D11124D03A3
+DTSTART:20260706T113000
+DTEND:20260706T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-06 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-26BB724B-82DB-4D27-9244-496C0A8FACFE
+DTSTART:20260713T113000
+DTEND:20260713T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-13 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-36D8AFBF-69C0-41BF-BB44-04344B8DA2F1
+DTSTART:20260720T113000
+DTEND:20260720T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-20 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-4A60BBD8-C034-41B1-8F53-C6184581F44B
+DTSTART:20260727T113000
+DTEND:20260727T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-27 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-5CB0E12A-540A-4EF6-A753-9F5721239173
+DTSTART:20260803T113000
+DTEND:20260803T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-08-03 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-D4DB7852-EDA7-475E-8024-C4AC7765A1C4
+DTSTART:20260629T113000
+DTEND:20260629T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-06-29 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-353A896A-F24A-4D07-B033-3EC9512CD5C6
+DTSTART:20260707T113000
+DTEND:20260707T133000
+SUMMARY:Appt with Alisa C. Chalmers\, MD <2026-07-07 Tue 11:30>
+DESCRIPTION:UCLA Health\, confirmed via check-in reminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-1AA2E00B-F647-452C-B732-77E79918E344
+DTSTART:20260708T160000
+DTEND:20260708T180000
+SUMMARY:Sandplay session w/ Sachiko Reece <2026-07-08 Wed 16:00>
+DESCRIPTION:Personal appointment — "Play-time" for creative rejuvenation (e
+ mail\nfrom Sachiko Reece)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-F334CE0F-2BD4-45CE-8667-EDC4D92D5DE4
+DTSTART:20260706T113000
+DTEND:20260706T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-06 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA — confirmed event reminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-E5757854-8723-4BB7-AB40-FF5AE499A986
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+SUMMARY:HyoJin & Soojung visit house (after DATALAND) <2026-07-14 Tue>
+DESCRIPTION:Confirmed via email w/ Hyo Jin Kim — arriving after their 1:30 
+ PM\nDATALAND reservation\; HyoJin +82 10 8976 7023\, Soojung 323-854-2227
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-CF586EBB-8EE5-45FA-80F3-9A866B7EBB04
+DTSTART:20260713T113000
+DTEND:20260713T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-13 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-9C2FED8C-78BC-42EA-949E-7551A46546C0
+DTSTART:20260720T113000
+DTEND:20260720T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-20 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-A0B3D19E-9A97-4F4F-B607-D3892F09DBA6
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+SUMMARY:FTB Web Pay — CA 2025 tax payment $2\,927.00 <2026-07-27 Mon>
+DESCRIPTION:California FTB Web Pay\, scheduled debit\, confirmation# 154294
+ 2281
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-BD16333D-19F7-471D-B968-60CCED9466D5
+DTSTART:20260727T113000
+DTEND:20260727T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-07-27 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-271F9DFB-C305-4EEB-950D-68A98F70CDFF
+DTSTART:20260810T113000
+DTEND:20260810T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-08-10 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — reschedule
+ d\n(replaces two PT30s)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-806EC047-C962-48C4-8B2A-606CF3AB49F1
+DTSTART:20260817T113000
+DTEND:20260817T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-08-17 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — reschedule
+ d\n(replaces two PT30s)
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-0582EE86-A1BC-4B15-8D67-88979AF21FE7
+DTSTART:20260824T113000
+DTEND:20260824T133000
+SUMMARY:PT30 ×2 personal training w/ Erik Gomez <2026-08-24 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA — back-to-back PT30s 11:30 + 12:00
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-CC335BC4-3664-4984-8CD1-3509C10616B7
+DTSTART:20260831T113000
+DTEND:20260831T133000
+SUMMARY:PT30 ×2 personal training w/ Erik Gomez <2026-08-31 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA — back-to-back PT30s 11:30 + 12:00
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-644CA1CB-B824-4ED2-9B0F-29163F51B1B0
+DTSTART:20260907T113000
+DTEND:20260907T133000
+SUMMARY:PT30 ×2 personal training w/ Erik Gomez <2026-09-07 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA — back-to-back PT30s 11:30 + 12:00
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-3713AD04-56D7-471E-9A6B-A693CDCDCC60
+DTSTART:20260803T113000
+DTEND:20260803T133000
+SUMMARY:PT60 personal training w/ Erik Gomez <2026-08-03 Mon 11:30>
+DESCRIPTION:EOS Fitness Downtown LA\, 701 W Cesar E Chavez Ave — confirmed 
+ event\nreminder
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-6257F8DE-FDCB-41F5-8956-94EAB38CFC61
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Submit 2025 tax info to Wagner & Wagner <2026-09-15 Tue>
+DESCRIPTION:Wagner & Wagner Tax & Accounting\, abbey@wagnernwagner.com\, (3
+ 10)\n373-1940 — extension filed through Oct 15\; deadline for on-time fili
+ ng
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-F7985729-F64A-49E8-B119-49897F7183BE
+DTSTART;VALUE=DATE:20260618
+DTEND;VALUE=DATE:20260619
+SUMMARY:reconnect with soo kim <2026-06-18 Thu>
+DESCRIPTION:send this text re: the river - here’s a clip from that movie I 
+ was\n telling you about that Kerry Tribe made about LA River which I did\n
+  sound and music for -(she also made me ride the whole thing with her\n on
+  a bike for research purposes).\n <https://www.1301pe.com/news/2018/9/28/k
+ erry-tribe-exquisite-corpse-screening-at-descanso-gardens-for-the-group-ex
+ hibition-la-reina-de-los-ngeles>
+CATEGORIES:cal,outreach,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-7C3094F9-15AF-4707-8017-4154BBD1CDD7
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Request estate account transcript (Form 4506-T) — check for TC 421 
+ <2026-10-08 Thu>
+DESCRIPTION:Brenda's Form 706 was mailed by Haislet's office 2026-04-08.  I
+ RS says\nwait 6 months after filing before requesting an account transcrip
+ t.\nTC 421 on the transcript = return accepted as filed / exam complete\n(
+ functional equivalent of the closing letter\, which is no longer sent\naut
+ omatically).  If no TC 421 yet\, check again later. Closing letter\n(optio
+ nal\, $67 via Pay.gov) can be requested 9 months after filing\n(~Jan 2027)
+  or any time once TC 421 appears.\n\nCan do this myself (signed the 706 as
+  executor — no need to involve\nHaislet): Form 4506-T: <https://www.irs.go
+ v/pub/irs-pdf/f4506t.pdf>\n• Line 1a: Estate of Brenda A. Webster\n• Line 
+ 1b: Brenda's SSN (NOT the estate EIN — 706 account is keyed to\n  decedent
+  SSN)\n• Line 3: my name\, title "Executor"\, address — must match what's 
+ on\n  the filed 706\n• Line 6: 706\, check box 6b (Account Transcript) — o
+ nly valid option\n  for estate tax\n• Line 9: period = date-of-death year-
+ end\n• Check attestation box\, sign\, date\, Title line = "Executor" (else
+ \n  rejected)\n• Send to Ogden UT RAIVS team (CA domicile) — fax faster th
+ an mail\,\n  use fax number from the chart in the current form's instructi
+ ons\n• Transcript arrives by mail in a few weeks\; look for TC 421 in\n  t
+ ransaction list\nPhone status check: IRS estate & gift tax line 866-699-40
+ 83 Ref:\n<https://www.irs.gov/businesses/small-businesses-self-employed/tr
+ anscripts-in-lieu-of-estate-tax-closing-letters>
+CATEGORIES:cal,estate,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-1FD3B3D9-AF1D-4B98-AF6B-4CAE8BB1E70D
+DTSTART:20260604T150000
+DTEND:20260604T170000
+SUMMARY:Soo-Young Chin & Tom visit
+DESCRIPTION:<2026-06-04 Thu 15:00> Soo-Young and Tom stopping by 1942 N Alv
+ arado\nThursday afternoon\, en route from Burbank (land ~2:30) to their\nF
+ riendBnB. In town for a 6/6 Silverlake wedding (also back 6/21 for\nRiver 
+ Solstice).  Scheduled via iMessage 5/26.
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-28787B10-AB6F-4337-AA63-E66E91DE70C2
+DTSTART:20260528T120000
+DTEND:20260528T140000
+SUMMARY:Maura lunch <2026-05-28 Thu 12:00>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-0A734B02-9F13-42C5-B407-0FEFA2C7D29A
+DTSTART:20260523T093000
+DTEND:20260523T113000
+SUMMARY:Delta 2272 LAX→SFO (HI6V9N) <2026-05-23 Sat 09:30>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-8BCA6E50-B39C-4A3F-AE76-A5A0F64027A9
+DTSTART:20260526T115500
+DTEND:20260526T135500
+SUMMARY:Delta 2272 SFO→LAX (HI6V9N) <2026-05-26 Tue 11:55>
+DESCRIPTION:***
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-6A9B91AC-4307-465E-9B55-EF5C82D47528
+DTSTART:20260527T150000
+DTEND:20260527T170000
+SUMMARY:Sachiko <2026-05-27 Wed 15:00>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-2670B612-B0A4-44C8-9221-FEED770617C5
+DTSTART:20260520T120000
+DTEND:20260520T140000
+SUMMARY:Fumio <2026-05-20 Wed 12:00>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-4C06ECEA-AD42-407A-BC22-E291E44E8AC3
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+SUMMARY:Brian lunch <2026-05-22 Fri>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:TS1-0121E11D-BE3C-4099-AAC0-C13A4E3A312C
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+SUMMARY:Maura coffee <2026-05-28 Thu>
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260804T020405Z
+UID:SC-8E4595AE-C762-4612-995D-C74E6479AD48
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260723
+SUMMARY:S: Contact Kerry on her return — lock in concrete coffee/studio vis
+ it
+DESCRIPTION:• *Reference [from Kerry\, 2026-06-24]:* "I'm heading back east
+  next\n  week to do some eldercare\, but I'll be back in *mid-July*. It wo
+ uld\n  be lovely to catch up after that." Your Jul 2 reply: "Let's connect
+ \n  when you're back from the wilds of the East." So *the ball is yours\n 
+  on her return* — reconnect in *late July* to lock an actual\n  coffee/ate
+ lier day.\n• Moved from 07-16 → 07-22 so it lands *after* her mid-July ret
+ urn\,\n  per her "catch up after that."\n\nKerry is east for eldercare\, b
+ ack mid-July. Her cue was "would be\nlovely to catch up after that" — and 
+ the 6/25 reply deliberately left\nit open.  Don't wait for her to ping: pr
+ opose a *specific* day (coffee\nor studio visit in the pentagonal ring)\, 
+ per the plan's beat (3). Also\nre-raise the Aphasia "Together" clip if the
+  password is still\nunresolved.
+CATEGORIES:cal,org-calendar-staging
+END:VEVENT
 END:VCALENDAR
