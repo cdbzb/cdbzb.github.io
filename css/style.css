@@ -634,6 +634,26 @@ img.zoomable {
   margin-top: 1rem;
 }
 
+/* === Excerpt + full performance pair === */
+.video-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.video-pair figure {
+  margin: 0;
+}
+
+.video-pair figcaption {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-top: 0.5rem;
+}
+
 /* === Text Links === */
 .text-link {
   color: rgba(255, 255, 255, 0.7);
